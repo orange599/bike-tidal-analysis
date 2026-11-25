@@ -4,6 +4,10 @@
 
 > 所有可视化数据均来自真实历史订单（22 万+ 订单事件、14,071 个电子围栏），不是模拟数据。
 
+![大屏效果预览](docs/screenshots/dashboard.png)
+
+*截图：2020-12-25 09:30 窗口，高德底图 + 围栏净流入点层 + 潮汐指数曲线。*
+
 ## 技术栈
 
 | 层次 | 技术 | 职责 |
@@ -72,7 +76,7 @@ bash scripts/run_api.sh
 
 浏览器打开 <http://127.0.0.1:8000>，点击播放即可看到围栏颜色随早高峰时间演变。
 
-`scripts/` 下的启动脚本包含作者本机的 JDK / Spark / Conda 路径，换机器后请改成自己的实际路径；也可按 [`docs/RUNBOOK.md`](docs/RUNBOOK.md) 中的手动命令启动。若数据库已有聚合结果，只需 `docker compose up -d` + `bash scripts/run_api.sh` 即可直接看大屏。
+`scripts/` 下的启动脚本包含作者本机的 JDK / Spark / Conda 路径，换机器后请改成自己的实际路径；也可按 [`docs/RUNBOOK.md`](docs/RUNBOOK.md) 中的手动命令启动。若数据库已有聚合结果，只需 `docker compose up -d` + `bash scripts/run_api.sh` 即可直接看大屏。地图默认使用高德瓦片（国内网络可直接访问），页面右上角可切换 Dark / Amap / None 三种底图。
 
 ## 主要接口
 

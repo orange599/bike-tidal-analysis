@@ -28,7 +28,8 @@ const BikeMap = (function () {
             attributionControl: true
         });
         layerGroup = L.layerGroup().addTo(map);
-        switchLayer('dark');
+        // 默认使用高德瓦片，国内网络可直接访问；CartoDB 暗色底图在部分网络环境下不可用
+        switchLayer('amap');
         return map;
     }
 
