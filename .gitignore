@@ -26,6 +26,9 @@ derby.log
 .env.*
 !.env.example
 
+# 工作区内部记录，不属于项目交付物
+.workbuddy/
+
 # 与实时大屏主线无关的数据归档（约 81MB，不进仓库）
 Shared bicycle data/Shared bicycle data/Trajectory data/
 Shared bicycle data/Shared bicycle data/Algorithm data/
